@@ -4,11 +4,13 @@ public class FindMaxArr2D {
     static int[][] arr;
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
-        System.out.println("Nhap vao chieu dai mang 2 chieu:");
+        System.out.println("Nhap vao so dong mang 2 chieu:");
         int d = sc.nextInt();
-        System.out.println("Nhap chieu rong mang 2 chieu:");
+        System.out.println("Nhap vao so cot mang 2 chieu:");
         int r = sc.nextInt();
+        arr = new int[d][r];
         for (int i=0; i<d; i++){
+            System.out.println("nhap vao "+r +" phan tu dong "+ (i+1));
             for (int j=0; j<r; j++){
                 arr[i][j]=sc.nextInt();
             }
@@ -22,6 +24,6 @@ public class FindMaxArr2D {
                  }
              }
          }
-        System.out.println(max);
+        System.out.println("So lon nhat trong mang 2D: "+max);
     }
 }
