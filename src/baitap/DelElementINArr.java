@@ -6,6 +6,7 @@ public class DelElementINArr {
     static int index;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("nhap do dai mang: ");
         int l = sc.nextInt();
         arr = new int[l];

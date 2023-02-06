@@ -5,6 +5,7 @@ public class MergeArr {
     static int[] arr2;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Nhap do dai mang 1: ");
         int l1= sc.nextInt();
         arr1= new int[l1];
