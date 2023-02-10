@@ -1,4 +1,4 @@
-package thuchanh;
+package baitap.ss5_local_variables_access_modifiers;
 
 public class Circle {
     private double radius = 1.0;
@@ -12,11 +12,6 @@ public class Circle {
 
     }
 
-    public Circle(double radius, String color) {
-        this.radius=radius;
-        this.color= color;
-    }
-
     public double getRadius() {
         return radius;
     }
@@ -24,4 +19,5 @@ public class Circle {
     public String getColor() {
         return color;
     }
+
 }
