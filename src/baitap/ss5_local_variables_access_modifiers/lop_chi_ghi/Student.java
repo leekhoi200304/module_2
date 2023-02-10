@@ -1,4 +1,4 @@
-package baitap.ss5_local_variables_access_modifiers;
+package baitap.ss5_local_variables_access_modifiers.lop_chi_ghi;
 
 public class Student {
     private String name = "john";

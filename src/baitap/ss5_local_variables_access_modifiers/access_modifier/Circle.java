@@ -1,4 +1,4 @@
-package baitap.ss5_local_variables_access_modifiers;
+package baitap.ss5_local_variables_access_modifiers.access_modifier;
 
 public class Circle {
     private double radius = 1.0;
