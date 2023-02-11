@@ -10,11 +10,12 @@ public class test {
         Circle circle = new Circle(2.0);
         Square square = new Square(3.0);
         Rectangle rectangle = new Rectangle(2.0,3.0);
-        System.out.println("Dien tich truoc khi thay doi: " );
-        System.out.println("Circle: "+circle.getArea());
-        System.out.println("Square: "+square.getArea());
-        System.out.println("Rectangle: "+rectangle.getArea()+"\n");
         Shape[] shape = new Shape[]{circle,square,rectangle};
+        System.out.println("Dien tich truoc khi thay doi: " );
+        for (Shape shape2 :shape){
+            System.out.println(shape2.getName()+shape2.getArea());
+        }
+        System.out.println();
         System.out.println("Dien tich sau khi thay doi: ");
         circle.resize(Math.random()*100);
         square.resize(Math.random()*100);
