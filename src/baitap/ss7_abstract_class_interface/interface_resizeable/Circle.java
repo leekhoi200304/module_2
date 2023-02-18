@@ -7,6 +7,8 @@ public class Circle extends Shape implements Resizeable {
         this.radius = radius;
     }
 
+
+
     public double getRadius() {
         return radius;
     }
