@@ -8,7 +8,15 @@ public class MyLinkedList {
         head = new Node(data);
     }
 
-    private class Node{
+    private Node getNode(int index) {
+        Node currentNode = head;
+        for (int i = 0; i < index; i++) {
+            currentNode = currentNode.getNext();
+        }
+        return currentNode;
+    }
+
+    public class Node{
         private Node next;
         public Object data;
 
@@ -18,6 +26,14 @@ public class MyLinkedList {
 
         public Object getData() {
             return this.data;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+
+        public Node getNext() {
+            return next;
         }
     }
 
@@ -30,8 +46,8 @@ public class MyLinkedList {
         }
         holder = temp.next;
 //        Object data = new Object();
-        Object data = null;
-        temp.next = new Node(data);
+
+        temp.next = new Node(temp.getData());
         temp.next.next = holder;
 
         numNode++;

@@ -4,7 +4,7 @@ public class CountOccurOfCharInString {
     static int count;
 
     public static void main(String[] args) {
-        String s = "CodeGym Danang";
+        String s = "mbcdam mmmm";
         System.out.println(s);
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap vao ki tu muon dem: ");
