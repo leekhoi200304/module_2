@@ -18,7 +18,6 @@ public class InsertionSort {
             System.out.println("");
         }
     }
-
     public static void main(String[] args) {
         int [] arr = {5,2,3,99,1,0,4};
         insert(arr);
