@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Triangle {
     public static int input(String sth){
-        System.out.println(sth);
+        System.out.print(sth);
         Scanner scanner = new Scanner(System.in);
         while (true){
             try {
@@ -24,7 +24,7 @@ public class Triangle {
         int b = input("Nhap vao canh thu 2: ");
         int c = input("Nhap vao canh thu 3: ");
         try {
-            if (a+b<c || a+c<b || b+c<a){
+            if (a+b<=c || a+c<=b || b+c<=a){
                 throw new IllegalTriangleException("3 canh vua nhap khong khong phai 1 tam giac!!!");
             }
             System.out.println("3 canh tren la 1 tam giac");
